@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body{
+    color: #fff;
+    background-color: #000;
+     font-family: "Inter", sans-serif;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities{
+  .text-gradient{
+   background: linear-gradient(135deg, rgb(37 99 235) 0%, rgb(249 115 22) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Animações */
+@layer utilities{
+   .animate-fade-up{
+     animation: fadeUp 0.8s ease-out forwards;
+   }
+}
+
+@keyframes fadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities{
+  .animate-zoom-in{
+    animation: zoomIn 0.8s ease-out forwards;
+  }
+}
+
+@keyframes zoomIn{
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animação na troca de cor */
+@keyframes phone-change{
+  from{
+   opacity: 0;
+   transform: translateX(30px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.phone-transition{
+  animation: phone-change 500ms ease-out;
+}

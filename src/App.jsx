@@ -1,0 +1,23 @@
+import Navbar from "../components/Navbar"
+import Cabecalho from "../components/Cabecalho"
+import Intro from "../components/Intro"
+import Principais from "../components/Principais"
+import Cores  from "../components/Cores"
+import Footer from "../components/Footer"
+
+
+function App() {
+  
+  return (
+    <div>
+      <Navbar />
+      <Cabecalho/>
+      <Intro />
+      <Principais/>
+      <Cores/>
+      <Footer/>
+    </div>
+  )
+}
+
+export default App
