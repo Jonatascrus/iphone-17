@@ -3,6 +3,7 @@ import Cabecalho from "../components/Cabecalho"
 import Intro from "../components/Intro"
 import Principais from "../components/Principais"
 import Cores  from "../components/Cores"
+import Types  from "../components/Types"
 import Footer from "../components/Footer"
 
 
@@ -15,6 +16,7 @@ function App() {
       <Intro />
       <Principais/>
       <Cores/>
+      <Types/>
       <Footer/>
     </div>
   )

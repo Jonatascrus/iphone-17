@@ -1,11 +1,14 @@
 import { useState } from "react";
+import iphoneBlue from '../src/assets/iphone-blue.jpg'
+import iphoneSilver from '../src/assets/iphone-silver.jpg'
+import iphoneOrange from '../src/assets/iphone-orange.jpg'
 
 function Cores() {
 
     const colors = [
-        { id: 'blue', name: 'Titânio Azul', image: '/img/iphone-blue.jpg', colorClass: 'bg-blue-500' },
-        { id: 'silver', name: 'Titânio Natural', image: '/img/iphone-silver.jpg', colorClass: 'bg-gray-300' },
-        { id: 'orange', name: 'Titânio Laranja', image: '/img/iphone-orange.jpg', colorClass: 'bg-orange-500' }
+        { id: 'blue', name: 'Titânio Azul', image: iphoneBlue, colorClass: 'bg-blue-500' },
+        { id: 'silver', name: 'Titânio Natural', image: iphoneSilver, colorClass: 'bg-gray-300' },
+        { id: 'orange', name: 'Titânio Laranja', image: iphoneOrange, colorClass: 'bg-orange-500' }
     ];
 
     const models = [
@@ -62,9 +65,43 @@ function Cores() {
                     <div className="text-center mt-16">
                         <button className="bg-blue-700 hover:bg-blue-800 text-white px-12 py-4 rounded-full text-lg font-medium transition-all duration-300 mb-8 hover:scale-105 shadow-md shadow-blue-500/50 cursor-pointer animate-fade-up">Compre agora á partir de R$ 9.950,00 </button>
                         <p className="text-gray-400">Ou em até 12x de R$ 994,92 sem juros</p>
+
+                        <div className="w-full overflow-hidden mt-20 border-y border-gray-800 py-5">
+                            <div className="marquee-track">
+                                <div className="marquee-group">
+                                    {[
+                                        "iPhone Pro",
+                                        "Titânio",
+                                        "Câmera Pro",
+                                        "A18 Pro",
+                                        "iOS 26",
+                                        "Super Retina XDR",
+                                        "Desempenho",
+                                        "Inovação"
+                                    ].map((word, index) => (
+                                        <span key={index}>{word}</span>
+                                    ))}
+                                </div>
+                                <div className="marquee-group" aria-hidden="true">
+                                    {[
+                                        "iPhone Pro",
+                                        "Titânio",
+                                        "Câmera Pro",
+                                        "A18 Pro",
+                                        "iOS 26",
+                                        "Super Retina XDR",
+                                        "Desempenho",
+                                        "Inovação"
+                                    ].map((word, index) =>(
+                                        <span key={index}>{word}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }

@@ -1,3 +1,7 @@
+import iphoneTitanium from '../src/assets/titanium-design.jpg';
+import iosFuturista from '../src/assets/ios-features.jpg';
+import A18 from '../src/assets/chip-a18-pro.jpg';
+
 function Principais() {
 
     return (
@@ -10,12 +14,12 @@ function Principais() {
                 
                 <div className=" grid grid-cols-2 gap-8 mb-16">
                     <div className=" bg-gray-900 rounded-3xl p-8 animate-zoom-in">
-                        <img className="w-full rounded-2xl mb-4" src="../../public/img/titanium-design.jpg" alt="Iphone titanium " />
+                        <img className="w-full rounded-2xl mb-4" src={iphoneTitanium} alt="Iphone titanium " />
                         <h3 className="font-bold mb-2 text-3xl">Titânio Premium</h3>
                         <p className="text-gray-300">Estrutura em titânio de grau aeroespacial. O smartphone mais forte e leve.</p>
                     </div>
                     <div className=" bg-gray-900 rounded-3xl p-8 animate-zoom-in">
-                        <img className="w-full rounded-2xl mb-4" src="../../public/img/ios-features.jpg" alt="Iphone futuristas"/>
+                        <img className="w-full rounded-2xl mb-4" src={iosFuturista} alt="Iphone futuristas"/>
                         <h3 className="font-bold mb-2 text-3xl">IOS 26</h3>
                         <p className="text-gray-300">O sistema Operacional mais avançado do mundo com IA integrada.</p>
                     </div>
@@ -23,7 +27,7 @@ function Principais() {
                 <div className="bg-gray-900 rounded-3xl p-12 mb-16" id="perfomace animate-zoom-in">
                     <h3 className="text-4xl font-bold mb-6 text-gradient">A18 Pro</h3>
                     <p className="text-gray-300 mb-6">O chip mais poderoso em um smartphone.</p>
-                    <img className="w-full rounded-2xl" src="../../public/img/chip-a18-pro.jpg" alt="A18 Pro" />
+                    <img className="w-full rounded-2xl" src={A18} alt="A18 Pro" />
 
                     <ul className="space-y-3 text-gray-300">
                         <li>CPU 20% mais rápida</li>
