@@ -19,7 +19,7 @@ function Cores() {
     const [selectedColor, setSelectedColor] = useState('blue');
 
     return (
-        <section id="colors" className="bg-black py-20 px-8">
+        <section id="colors" className="scroll-section bg-black py-20 px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl md:text-6xl font-bold mb-4">Escolha a sua cor</h2>
@@ -47,7 +47,7 @@ function Cores() {
                         ))}
                     </div>
 
-                    <div className="grid gap-8 mt-20 grid-cols-2 animate-zoom-in">
+                    {/*    <div className="grid gap-8 mt-20 grid-cols-2 animate-zoom-in">
                         {models.map((model, index) => (
                             <div key={index} className="bg-linear-to-br from-gray-900 to-transparent rounded-3xl p-8 border border-gray-800">
                                 <div></div>
@@ -61,12 +61,12 @@ function Cores() {
                                 </ul>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                     <div className="text-center mt-16">
-                        <button className="bg-blue-700 hover:bg-blue-800 text-white px-12 py-4 rounded-full text-lg font-medium transition-all duration-300 mb-8 hover:scale-105 shadow-md shadow-blue-500/50 cursor-pointer animate-fade-up">Compre agora á partir de R$ 9.950,00 </button>
+                        <button className="animate-zoom-in bg-blue-700 hover:bg-blue-800 text-white px-12 py-4 rounded-full text-lg font-medium transition-all duration-300 mb-8 hover:scale-105 shadow-md shadow-blue-500/50 cursor-pointer">Compre agora á partir de R$ 9.950,00 </button>
                         <p className="text-gray-400">Ou em até 12x de R$ 994,92 sem juros</p>
 
-                        <div className="w-full overflow-hidden mt-20 border-y border-gray-800 py-5">
+                        <div className="w-full overflow-hidden mt-20 py-5">
                             <div className="marquee-track">
                                 <div className="marquee-group">
                                     {[
@@ -92,7 +92,7 @@ function Cores() {
                                         "Super Retina XDR",
                                         "Desempenho",
                                         "Inovação"
-                                    ].map((word, index) =>(
+                                    ].map((word, index) => (
                                         <span key={index}>{word}</span>
                                     ))}
                                 </div>
